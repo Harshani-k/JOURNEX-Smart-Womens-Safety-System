@@ -1,0 +1,112 @@
+{
+  "model_version": "1.0.0-rf",
+  "algorithm": "RandomForestClassifier",
+  "hyperparameters": {
+    "n_estimators": 100,
+    "max_depth": 8,
+    "min_samples_split": 4,
+    "min_samples_leaf": 2,
+    "class_weight": "balanced",
+    "random_state": 42
+  },
+  "trained_at": "2026-11-22T13:21:46.102582+00:00",
+  "dataset": {
+    "total_samples": 4000,
+    "train_samples": 3000,
+    "test_samples": 1000,
+    "class_distribution": {
+      "LOW": 1600,
+      "MODERATE": 1000,
+      "HIGH": 800,
+      "CRITICAL": 600
+    },
+    "synthetic_disclaimer": "Trained on synthetic rule-simulated travel anomalies. Does not reflect real-world crime incidence or calibrated probability of violence."
+  },
+  "metrics": {
+    "accuracy": 1.0,
+    "precision_macro": 1.0,
+    "precision_weighted": 1.0,
+    "recall_macro": 1.0,
+    "recall_weighted": 1.0,
+    "f1_macro": 1.0,
+    "f1_weighted": 1.0,
+    "confusion_matrix": [
+      [
+        400,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        250,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        200,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        150
+      ]
+    ],
+    "classification_report": {
+      "LOW": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 400.0
+      },
+      "MODERATE": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 250.0
+      },
+      "HIGH": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 200.0
+      },
+      "CRITICAL": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 150.0
+      },
+      "accuracy": 1.0,
+      "macro avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 1000.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 1000.0
+      }
+    }
+  },
+  "feature_importances": {
+    "max_stop_duration_seconds": 0.21683906453502458,
+    "max_deviation_distance": 0.14802641840841987,
+    "missed_checkins_count": 0.13143151976065542,
+    "delay_minutes": 0.12521653911908293,
+    "route_deviation_count": 0.11668823274228239,
+    "avg_gps_accuracy": 0.09916223194558302,
+    "unexpected_stop_count": 0.09455802288909074,
+    "is_delayed": 0.05242806593043458,
+    "pending_checkins_count": 0.012437026813735656,
+    "journey_progress_pct": 0.0025689226147402175,
+    "is_night_journey": 0.0006439552409507897
+  }
+}

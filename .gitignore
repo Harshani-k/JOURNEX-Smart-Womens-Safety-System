@@ -1,0 +1,113 @@
+# ==============================================================================
+# JOURNEX - Root .gitignore
+# Smart Women's Safety Check-In and Journey Monitoring System
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# Operating System & IDE Files
+# ------------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+
+# Visual Studio Code & Editors
+.vscode/
+*.code-workspace
+
+# JetBrains / Android Studio
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+.gradle/
+build/
+
+# ------------------------------------------------------------------------------
+# Android & Gradle Build Artifacts
+# ------------------------------------------------------------------------------
+android/**/.gradle/
+android/**/build/
+android/**/captures/
+android/**/local.properties
+android/**/.cxx/
+android/**/generated/
+android/**/debug/
+android/**/release/
+
+# Android Keystores & Signing
+*.jks
+*.keystore
+signing.properties
+
+# Android Package Files
+*.apk
+*.aab
+*.ap_
+
+# ------------------------------------------------------------------------------
+# Python & Flask Backend
+# ------------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+backend/env/
+backend/venv/
+backend/.venv/
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Flask & Testing Artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+*.log
+
+# ------------------------------------------------------------------------------
+# Environment Variables & Secrets (Keep .env.example safe)
+# ------------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.cert
+
+# ------------------------------------------------------------------------------
+# Database Artifacts (SQLite local files)
+# ------------------------------------------------------------------------------
+*.sqlite
+*.sqlite3
+*.db
+backend/*.db
+backend/*.sqlite3
+backend/instance/
+instance/
+
+# ------------------------------------------------------------------------------
+# Machine Learning Artifacts & Raw Datasets
+# ------------------------------------------------------------------------------
+ml/venv/
+ml/.venv/
+.ipynb_checkpoints/
+*.joblib
+*.pkl
+*.h5
+*.onnx
+# Keep small sample datasets, ignore large generated raw data
+ml/data/raw/*.csv
+ml/data/processed/*.csv
+!ml/data/sample_journey_dataset.csv
+
+# Temporary Scratch Files
+scratch/
+

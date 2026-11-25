@@ -1,0 +1,13 @@
+[
+  "missed_checkins_count",
+  "pending_checkins_count",
+  "is_delayed",
+  "delay_minutes",
+  "route_deviation_count",
+  "max_deviation_distance",
+  "unexpected_stop_count",
+  "max_stop_duration_seconds",
+  "avg_gps_accuracy",
+  "journey_progress_pct",
+  "is_night_journey"
+]
